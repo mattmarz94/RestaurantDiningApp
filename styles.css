@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+
+body{
+    min-height: 100vh;
+    font-family: "Smythe", cursive;
+    background: #f8f8f8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.diner {
+  color: white;
+  background: url(images/burger.png) no-repeat;
+  padding: 30px 30px 40px 30px;
+}
+/* menu styling */
+.dashboard{
+    background: white;
+}
+
+.menu-items{
+    display: grid;
+}
+
+.menu-inner{
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 5vw, 30px);
+    border-bottom: 1px solid lightgray;
+    padding: 0px 20px;
+}
+
+.menu-description {
+  display: grid;
+}
+
+.menu-option{
+    font-size: 25px;
+}
+
+.menu-item-variations{
+    margin-top: -25px;
+}
+
+.add-btn{
+    margin-left: auto;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background: lightgoldenrodyellow;
+}
+
+.add-btn:hover{
+    transition: 0.2s;
+    background: lightblue;
+}
