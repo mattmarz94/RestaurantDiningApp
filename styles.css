@@ -54,6 +54,135 @@ body{
 }
 
 .add-btn:hover{
-    transition: 0.2s;
+    transition: 0.3s;
     background: lightblue;
 }
+
+/* Selected menu items order */
+
+.order-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.food-items{
+    display: flex;
+    font-size: 20px;
+    width: 50%;
+}
+
+.remove-food{
+    padding-left: 10px;
+    font-size: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.total-price{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 70px
+}
+
+#complete-order {
+    margin: auto;
+}
+
+#complete-order{
+    display: flex;
+    padding: 3px 10px;
+    font-family: "Smythe", cursive;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: all 0.2s;
+    outline: none;
+}
+
+#complete-order:hover{
+    display: flex;
+    padding: 3px 10px;
+    font-family: "Smythe", cursive;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 3px 5px 10px 5px lightgray;
+    outline: none;
+}
+
+/* Payment Modal */
+
+.modal {
+    display: none;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    color: black;
+    height: 330px;
+    width: 450px;
+    background-color: white;;
+    border-radius: 5px;    
+    box-shadow: 0px 0px 60px 20px lightblue;
+    color: whitesmoke;
+    padding-right: 20px;
+}
+
+.modal-inner{
+    margin: auto;
+    width: 320px;
+}
+
+.modal-inner h2 {
+    color: black;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    
+}
+
+.modal-btn{
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px 10px;
+    margin-left: 10px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    color: white;
+    background: #16DB99;
+    cursor: pointer;
+}
+
+.close-modal-btn-container{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.modal-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: black;
+}
+
+.modal-close-btn:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+

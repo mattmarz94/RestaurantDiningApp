@@ -21,12 +21,29 @@
                     <div class="orders">
                         <!-- individual order goes here -->
                     </div>
-                    <div class="total-price hidden" id="total-price"></div>
+                    <div class="total-price" id="total-price"></div>
                         <div class="total-price">Total Price</div>
                         <div id="total-price"></div>
                     <button id="complete-order">Complete order</button>
                 </section>
             </div>
         </div>
+        <div class="modal" id="modal">
+            <div class="close-modal-btn-container">
+                <button class="modal-close-btn" id="modal-close-btn">X</button>
+            </div>
+            <div class="modal-inner" id="modal-inner">
+                <h2>Enter card details</h2>
+                <form id="payment-form">
+                    <input type="text" name="fullName" placeholder="Enter full name" required/>
+                    <input type="number" name="cardNumber" placeholder="Enter card number" required/>
+                    <input type="number" name="cvv" placeholder="Enter CVV" required/>
+                    <div class="modal-choice-btns" id="modal-choice-btns">
+                        <button type="submit" class="modal-btn">Pay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+	<script src="app.js" type="module"></script>
     </body>
 </html>
